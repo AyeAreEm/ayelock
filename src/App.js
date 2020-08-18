@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Password from './Password.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>AyeLock</h1>
+      <br/>
+      <Password type="Weak:" password="yes, this is a good password"/>
+      <br/>
+      <Password type="Recommended:" password="this is also a good password"/>
+      <br/>
+      <Password type="Strong:" password="this is best password in mother russia"/>
+      <br/>
+      <Password type="Easy to read:" password="ths1isezytored"/>
     </div>
   );
 }
