@@ -1,12 +1,12 @@
 const Generator = (isLetters, isUpperCase, isNumbers, isSpecial, numLen) => {
-    const loweCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+    const lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
     const upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const numbers = "0123456789";
     const special = "!@#%^&*()_-+={}[]:'/?\$|;.,";
 
     let allowedChars = "";
 
-    allowedChars += (isLetters ? loweCaseLetters : '');
+    allowedChars += (isLetters ? lowerCaseLetters : '');
     allowedChars += (isUpperCase ? upperCaseLetters : '');
     allowedChars += (isNumbers ? numbers : '');
     allowedChars += (isSpecial ? special : '');
