@@ -8,6 +8,6 @@ const Password = ({type, password}) => {
             <h2>{password}</h2>
         </div>
     );
-}
+};
 
 export default Password;
